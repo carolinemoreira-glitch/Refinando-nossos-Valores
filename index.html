@@ -29,7 +29,7 @@ html,body{font-family:var(--font);background:var(--bg);color:var(--fg1);overflow
 #prog{position:absolute;top:0;left:0;height:2px;background:var(--brand);z-index:600;transition:width .5s cubic-bezier(.16,1,.3,1)}
 
 /* SIDE NAV */
-#snav{position:absolute;right:28px;top:50%;transform:translateY(-50%);z-index:500;display:flex;flex-direction:column;gap:7px}
+#snav{position:absolute;right:16px;top:50%;transform:translateY(-50%);z-index:500;display:flex;flex-direction:column;gap:7px}
 .nd{width:5px;height:5px;border-radius:50%;border:1px solid var(--fg3);background:transparent;transition:all .22s}
 .nd.on{background:var(--brand);border-color:var(--brand);transform:scale(1.7)}
 .nd:hover{border-color:var(--brand)}
@@ -38,8 +38,8 @@ html,body{font-family:var(--font);background:var(--bg);color:var(--fg1);overflow
 .nd:hover::after{opacity:1;transform:translateY(-50%) translateX(0)}
 
 /* ARROWS */
-#nav-next{position:absolute;right:16px;top:calc(50% + 36px);z-index:500}
-#nav-prev{position:absolute;right:16px;top:calc(50% - 6px);z-index:500}
+#nav-next{position:absolute;right:20px;bottom:16px;z-index:500}
+#nav-prev{position:absolute;right:20px;bottom:56px;z-index:500}
 .arr{width:32px;height:32px;border-radius:50%;border:1px solid var(--border2);background:rgba(255,255,255,.03);color:var(--fg2);display:flex;align-items:center;justify-content:center;transition:all .2s;backdrop-filter:blur(8px)}
 .arr:hover{background:var(--brand);border-color:var(--brand);color:#fff}
 .arr:disabled{opacity:.15;pointer-events:none}
@@ -169,18 +169,18 @@ html,body{font-family:var(--font);background:var(--bg);color:var(--fg1);overflow
 </div>
 
 <div class="slide" data-index="1">
-  <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:52px 44px 40px;">
-   <div style="width:100%;max-width:1200px;">
+  <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:52px 34px 40px;">
+   <div style="width:100%;max-width:1212px;">
     <div class="r d2" style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:0;">
       <div style="background:var(--bg2);border:1px solid var(--border);border-left:4px solid var(--brand);border-radius:16px;padding:44px 46px 44px 42px;">
         <div style="font-size:15px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--brand);margin-bottom:16px;">Versão 1</div>
         <div style="font-size:28px;font-weight:700;color:var(--fg1);margin-bottom:18px;line-height:1.25;">Transformamos, não só recomendamos</div>
-        <div style="font-size:21px;color:var(--fg2);line-height:1.6;">Nosso trabalho não termina em uma boa análise, uma apresentação ou uma recomendação. Estratégia precisa virar execução, e execução precisa gerar mudança concreta. Assumimos responsabilidade pelo impacto que ajudamos a criar e buscamos transformar a realidade do cliente, não apenas descrevê-la.</div>
+        <div style="font-size:21px;color:var(--fg2);line-height:1.6;text-wrap:pretty;">Nosso trabalho não termina em uma boa análise, uma apresentação ou uma recomendação. Estratégia precisa virar execução, e execução precisa gerar mudança concreta. Assumimos responsabilidade pelo impacto que ajudamos a criar e buscamos transformar a realidade do cliente, não apenas descrevê-la.</div>
       </div>
       <div style="background:var(--bg2);border:1px solid var(--border);border-left:4px solid rgba(255,255,255,.35);border-radius:16px;padding:44px 46px 44px 42px;">
         <div style="font-size:15px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--brand);margin-bottom:16px;">Versão 2</div>
         <div style="font-size:28px;font-weight:700;color:var(--fg1);margin-bottom:18px;line-height:1.25;">Transformamos, não só recomendamos</div>
-        <div style="font-size:21px;color:var(--fg2);line-height:1.6;">Estratégia sem execução é teoria. Transformamos, entregamos e nos responsabilizamos pelo impacto que geramos.</div>
+        <div style="font-size:21px;color:var(--fg2);line-height:1.6;text-wrap:pretty;">Estratégia sem execução é teoria. Transformamos, entregamos e nos responsabilizamos pelo impacto que geramos.</div>
       </div>
     </div>
    </div>
@@ -188,18 +188,18 @@ html,body{font-family:var(--font);background:var(--bg);color:var(--fg1);overflow
 </div>
 
 <div class="slide" data-index="2">
-  <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:52px 44px 40px;">
-   <div style="width:100%;max-width:1200px;">
+  <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:52px 34px 40px;">
+   <div style="width:100%;max-width:1212px;">
     <div class="r d2" style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:0;">
       <div style="background:var(--bg2);border:1px solid var(--border);border-left:4px solid var(--brand);border-radius:16px;padding:44px 46px 44px 42px;">
         <div style="font-size:15px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--brand);margin-bottom:16px;">Versão 1</div>
         <div style="font-size:28px;font-weight:700;color:var(--fg1);margin-bottom:18px;line-height:1.25;">Aprendemos antes do mercado</div>
-        <div style="font-size:21px;color:var(--fg2);line-height:1.6;">Em um ambiente que muda tão rápido quanto a IA, esperar certezas significa chegar tarde. Experimentamos novas tecnologias, construímos, testamos, erramos rápido e formamos opinião própria. Aprendemos fazendo e transformamos esse aprendizado em vantagem para nossos clientes, parceiros e para o próprio Distrito.</div>
+        <div style="font-size:21px;color:var(--fg2);line-height:1.6;text-wrap:pretty;">Em um ambiente que muda tão rápido quanto a IA, esperar certezas significa chegar tarde. Experimentamos novas tecnologias, construímos, testamos, erramos rápido e formamos opinião própria. Aprendemos fazendo e transformamos esse aprendizado em vantagem para nossos clientes, parceiros e para o próprio Distrito.</div>
       </div>
       <div style="background:var(--bg2);border:1px solid var(--border);border-left:4px solid rgba(255,255,255,.35);border-radius:16px;padding:44px 46px 44px 42px;">
         <div style="font-size:15px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--brand);margin-bottom:16px;">Versão 2</div>
         <div style="font-size:28px;font-weight:700;color:var(--fg1);margin-bottom:18px;line-height:1.25;">Aprendemos antes do mercado</div>
-        <div style="font-size:21px;color:var(--fg2);line-height:1.6;">Certeza chega depois. A gente não espera. Testamos, acertamos e erramos rápido, e transformamos aprendizado em vantagem para clientes, parceiros e para o próprio Distrito.</div>
+        <div style="font-size:21px;color:var(--fg2);line-height:1.6;text-wrap:pretty;">Certeza chega depois. A gente não espera. Testamos, acertamos e erramos rápido, e transformamos aprendizado em vantagem para clientes, parceiros e para o próprio Distrito.</div>
       </div>
     </div>
    </div>
@@ -207,18 +207,18 @@ html,body{font-family:var(--font);background:var(--bg);color:var(--fg1);overflow
 </div>
 
 <div class="slide" data-index="3">
-  <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:52px 44px 40px;">
-   <div style="width:100%;max-width:1200px;">
+  <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:52px 34px 40px;">
+   <div style="width:100%;max-width:1212px;">
     <div class="r d2" style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:0;">
       <div style="background:var(--bg2);border:1px solid var(--border);border-left:4px solid var(--brand);border-radius:16px;padding:44px 46px 44px 42px;">
         <div style="font-size:15px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--brand);margin-bottom:16px;">Versão 1</div>
         <div style="font-size:28px;font-weight:700;color:var(--fg1);margin-bottom:18px;line-height:1.25;">Impacto antes de hype</div>
-        <div style="font-size:21px;color:var(--fg2);line-height:1.6;">Tecnologia só importa quando muda alguma coisa relevante. Não perseguimos tendências por novidade nem implementamos IA para parecer inovadores. Priorizamos iniciativas capazes de melhorar receita, eficiência, experiência, capacidade organizacional ou vantagem competitiva. A pergunta é sempre: o que isso transforma no negócio?</div>
+        <div style="font-size:21px;color:var(--fg2);line-height:1.6;text-wrap:pretty;">Tecnologia só importa quando muda alguma coisa relevante. Não perseguimos tendências por novidade nem implementamos IA para parecer inovadores. Priorizamos iniciativas capazes de melhorar receita, eficiência, experiência, capacidade organizacional ou vantagem competitiva. A pergunta é sempre: o que isso transforma no negócio?</div>
       </div>
       <div style="background:var(--bg2);border:1px solid var(--border);border-left:4px solid rgba(255,255,255,.35);border-radius:16px;padding:44px 46px 44px 42px;">
         <div style="font-size:15px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--brand);margin-bottom:16px;">Versão 2</div>
         <div style="font-size:28px;font-weight:700;color:var(--fg1);margin-bottom:18px;line-height:1.25;">Impacto antes de hype</div>
-        <div style="font-size:21px;color:var(--fg2);line-height:1.6;">Tendência é ruído. Perseguimos o que sustenta resultado.</div>
+        <div style="font-size:21px;color:var(--fg2);line-height:1.6;text-wrap:pretty;">Tendência é ruído. Perseguimos o que sustenta resultado.</div>
       </div>
     </div>
    </div>
@@ -226,18 +226,18 @@ html,body{font-family:var(--font);background:var(--bg);color:var(--fg1);overflow
 </div>
 
 <div class="slide" data-index="4">
-  <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:52px 44px 40px;">
-   <div style="width:100%;max-width:1200px;">
+  <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:52px 34px 40px;">
+   <div style="width:100%;max-width:1212px;">
     <div class="r d2" style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:0;">
       <div style="background:var(--bg2);border:1px solid var(--border);border-left:4px solid var(--brand);border-radius:16px;padding:44px 46px 44px 42px;">
         <div style="font-size:15px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--brand);margin-bottom:16px;">Versão 1</div>
         <div style="font-size:28px;font-weight:700;color:var(--fg1);margin-bottom:18px;line-height:1.25;">Assumimos e fazemos acontecer</div>
-        <div style="font-size:21px;color:var(--fg2);line-height:1.6;">Autonomia vem acompanhada de responsabilidade. Quem identifica um problema não espera passivamente que alguém resolva: entende, propõe, mobiliza, executa e leva até o fim. Pedimos ajuda quando necessário, mas não terceirizamos a responsabilidade pelo resultado.</div>
+        <div style="font-size:21px;color:var(--fg2);line-height:1.6;text-wrap:pretty;">Autonomia vem acompanhada de responsabilidade. Quem identifica um problema não espera passivamente que alguém resolva: entende, propõe, mobiliza, executa e leva até o fim. Pedimos ajuda quando necessário, mas não terceirizamos a responsabilidade pelo resultado.</div>
       </div>
       <div style="background:var(--bg2);border:1px solid var(--border);border-left:4px solid rgba(255,255,255,.35);border-radius:16px;padding:44px 46px 44px 42px;">
         <div style="font-size:15px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--brand);margin-bottom:16px;">Versão 2</div>
         <div style="font-size:28px;font-weight:700;color:var(--fg1);margin-bottom:18px;line-height:1.25;">Fazemos acontecer</div>
-        <div style="font-size:21px;color:var(--fg2);line-height:1.6;">Autonomia vem com responsabilidade. Propomos, mobilizamos, executamos. Pedimos ajuda quando precisamos, mas nunca terceirizamos o resultado.</div>
+        <div style="font-size:21px;color:var(--fg2);line-height:1.6;text-wrap:pretty;">Autonomia vem com responsabilidade. Propomos, mobilizamos, executamos. Pedimos ajuda quando precisamos, mas nunca terceirizamos o resultado.</div>
       </div>
     </div>
    </div>
@@ -245,18 +245,18 @@ html,body{font-family:var(--font);background:var(--bg);color:var(--fg1);overflow
 </div>
 
 <div class="slide" data-index="5">
-  <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:52px 44px 40px;">
-   <div style="width:100%;max-width:1200px;">
+  <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:52px 34px 40px;">
+   <div style="width:100%;max-width:1212px;">
     <div class="r d2" style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:0;">
       <div style="background:var(--bg2);border:1px solid var(--border);border-left:4px solid var(--brand);border-radius:16px;padding:44px 46px 44px 42px;">
         <div style="font-size:15px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--brand);margin-bottom:16px;">Versão 1</div>
         <div style="font-size:28px;font-weight:700;color:var(--fg1);margin-bottom:18px;line-height:1.25;">Elevamos a barra</div>
-        <div style="font-size:21px;color:var(--fg2);line-height:1.6;">Bom o suficiente não é o nosso padrão. Buscamos qualidade no pensamento, na execução e nos detalhes — em um produto, um código, um conteúdo, um evento ou uma conversa com cliente. Questionamos como fazer melhor e tratamos cada entrega como uma oportunidade de aumentar o nível do Distrito.</div>
+        <div style="font-size:21px;color:var(--fg2);line-height:1.6;text-wrap:pretty;">Bom o suficiente não é o nosso padrão. Buscamos qualidade no pensamento, na execução e nos detalhes — em um produto, um código, um conteúdo, um evento ou uma conversa com cliente. Questionamos como fazer melhor e tratamos cada entrega como uma oportunidade de aumentar o nível do Distrito.</div>
       </div>
       <div style="background:var(--bg2);border:1px solid var(--border);border-left:4px solid rgba(255,255,255,.35);border-radius:16px;padding:44px 46px 44px 42px;">
         <div style="font-size:15px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--brand);margin-bottom:16px;">Versão 2</div>
         <div style="font-size:28px;font-weight:700;color:var(--fg1);margin-bottom:18px;line-height:1.25;">Elevamos o Nível</div>
-        <div style="font-size:21px;color:var(--fg2);line-height:1.6;">Questionamos como fazer melhor até chegar ao extraordinário. É assim que garantimos o sucesso do cliente.</div>
+        <div style="font-size:21px;color:var(--fg2);line-height:1.6;text-wrap:pretty;">Questionamos como fazer melhor até chegar ao extraordinário. É assim que garantimos o sucesso do cliente.</div>
       </div>
     </div>
    </div>
@@ -264,18 +264,18 @@ html,body{font-family:var(--font);background:var(--bg);color:var(--fg1);overflow
 </div>
 
 <div class="slide" data-index="6">
-  <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:52px 44px 40px;">
-   <div style="width:100%;max-width:1200px;">
+  <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:52px 34px 40px;">
+   <div style="width:100%;max-width:1212px;">
     <div class="r d2" style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:0;">
       <div style="background:var(--bg2);border:1px solid var(--border);border-left:4px solid var(--brand);border-radius:16px;padding:44px 46px 44px 42px;">
         <div style="font-size:15px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--brand);margin-bottom:16px;">Versão 1</div>
         <div style="font-size:28px;font-weight:700;color:var(--fg1);margin-bottom:18px;line-height:1.25;">Verdade acima do conforto</div>
-        <div style="font-size:21px;color:var(--fg2);line-height:1.6;">Preferimos uma conversa difícil que melhora a decisão a um consenso confortável que preserva o problema. Questionamos premissas, discordamos com respeito, reconhecemos quando algo não funcionou e mudamos de opinião diante de evidências melhores. Transparência e pensamento crítico são parte do nosso trabalho.</div>
+        <div style="font-size:21px;color:var(--fg2);line-height:1.6;text-wrap:pretty;">Preferimos uma conversa difícil que melhora a decisão a um consenso confortável que preserva o problema. Questionamos premissas, discordamos com respeito, reconhecemos quando algo não funcionou e mudamos de opinião diante de evidências melhores. Transparência e pensamento crítico são parte do nosso trabalho.</div>
       </div>
       <div style="background:var(--bg2);border:1px solid var(--border);border-left:4px solid rgba(255,255,255,.35);border-radius:16px;padding:44px 46px 44px 42px;">
         <div style="font-size:15px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--brand);margin-bottom:16px;">Versão 2</div>
         <div style="font-size:28px;font-weight:700;color:var(--fg1);margin-bottom:18px;line-height:1.25;">Coragem de verdade</div>
-        <div style="font-size:21px;color:var(--fg2);line-height:1.6;">Preferimos a conversa difícil ao consenso confortável. Discordamos com respeito, reconhecemos quando erramos e mudamos de ideia quando surge uma solução mais inteligente para o negócio.</div>
+        <div style="font-size:21px;color:var(--fg2);line-height:1.6;text-wrap:pretty;">Preferimos a conversa difícil ao consenso confortável. Discordamos com respeito, reconhecemos quando erramos e mudamos de ideia quando surge uma solução mais inteligente para o negócio.</div>
       </div>
     </div>
    </div>
